@@ -27,6 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: 'https://kscrazygames.github.io'
+      baseurl: ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
