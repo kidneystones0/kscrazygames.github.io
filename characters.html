@@ -155,7 +155,7 @@
         newcomment.innerText = comment
 
         comment_list.appendChild(newcomment)
-        comments_arr.push(newcomment)
+        comments_arr.push(comment_list)
 
         comment_text.value('')
 
@@ -174,15 +174,15 @@
 
     //give popcorns
     popcorndonation = document.getElementById("donation")
+    var popcorns = 0
     var popcount = document.getElementById("popcount")
 
-    save = localStorage.getItem("popcorns")
+    showSave();
 
-    if (save > 0){
-        popcorns = save
-    }
-    else {
-        var popcorns = 0
+    function showSave(){
+
+        save = localStorage.getItem("popcorns")
+
     }
 
     popcorndonation.addEventListener('click', function(){
